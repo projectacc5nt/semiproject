@@ -57,7 +57,7 @@
                 <div class="idFindBox" id="idFindBox3">
                     <p>가입하신 아이디는<br><em id="findId">00000</em><br>입니다.</p>
                     <button type="button" id="findPwdBtn">비밀번호 찾기</button>
-                    <a href="regi.do">로그인</a>
+                    <a href="/member/regi.do">로그인</a>
                 </div>
                 <div class="pwdFindBox" id="pwdFindBox3">
                     <div class="inputBox">
@@ -72,7 +72,7 @@
                 </div>
                 <div class="pwdFindBox" id="pwdFindBox4">
                     <p>비밀번호가 변경되었습니다. <br>로그인 해 주십시오.</p>
-                    <a href="login.do">로그인</a>
+                    <a href="/member/login.do">로그인</a>
                 </div>
             </div>
         </div>
@@ -137,7 +137,7 @@
     		if(idEmail.val() !== ""){
     			$.ajax({
     				type:"post",
-    				url:"findId.do",
+    				url:"/member/findId.do",
     				data:{"usermail":idEmail.val()},
     				success:function(msg){
     					if(msg == "success"){
@@ -162,7 +162,7 @@
     		if(idCode.val() !== ""){
     			$.ajax({
     				type:"post",
-    				url:"idChk.do",
+    				url:"/member/idChk.do",
     				data:{
     					teEmail:idEmail.val(),
     					teEmailKey:idCode.val()
@@ -193,7 +193,7 @@
     		if(pwdEmail.val() !== ""){
     			$.ajax({
     				type:"post",
-    				url:"findPwd.do",
+    				url:"/member/findPwd.do",
     				data:{
     					teId:userId.val(),
     					teEmail:pwdEmail.val()
@@ -224,7 +224,7 @@
     		if(pwdCode.val() !== ""){
     			$.ajax({
     				type:"post",
-    				url:"emailAuthChk.do",
+    				url:"/member/emailAuthChk.do",
     				data:{
     					teEmail:pwdEmail.val(),
     					teEmailKey:pwdCode.val()
@@ -254,7 +254,7 @@
     		if(newPwd.val() !== "" && newPwdChk.val() !== "" && newPwdChk.val() == newPwd.val()){
     			$.ajax({
     				type:"post",
-    				url:"pwdChk.do",
+    				url:"/member/pwdChk.do",
     				data:{
     					teEmail:pwdEmail.val(),
     					tePwd:newPwdChk.val()

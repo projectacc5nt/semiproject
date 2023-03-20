@@ -19,7 +19,7 @@
 <jsp:include page="/WEB-INF/views/member/header.jsp"/>
 	
 	<div class="updatePwdWrap">
-		<form action="updatePwdAf.do" method="post" id="updatePwdForm">
+		<form action="/member/updatePwdAf.do" method="post" id="updatePwdForm">
 			<div class="updatePwdBox">
 				<h2>비밀번호 변경</h2>
 				<input type="hidden" value="<%=dto.getTeId()%>" id="userId" name="teId">

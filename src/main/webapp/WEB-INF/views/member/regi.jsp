@@ -23,7 +23,7 @@
 	<main>
     <h2>회원가입</h2>
     <p class="requiredInfo">*필수입력사항</p>
-    <form action="registerAf.do" method="post" enctype="multipart/form-data" id="regiForm">
+    <form action="/member/registerAf.do" method="post" enctype="multipart/form-data" id="regiForm">
         <div class="profile">
             <div class="roundImg"><img src="../asset/images/profile.png" alt="프로필이미지"></div>
             <input type="file" id="profile" name="fileload">
@@ -166,7 +166,7 @@ $(document).ready(function() {
 			// id 중복확인
 			$.ajax({
 				type:"post",
-				url:"idcheck.do",
+				url:"/member/idcheck.do",
 				data:{ "id":userId.val() },
 				success:function(msg){
 					// alert('success');
@@ -200,7 +200,7 @@ $(document).ready(function() {
 		if(userEmail.val() !== ""){
 			$.ajax({
 				type:"post",
-				url:"emailChksend.do",
+				url:"/member/emailChksend.do",
 				data:{"usermail":userEmail.val()},
 				success:function(msg){
 					if(msg == "NO"){
@@ -235,7 +235,7 @@ $(document).ready(function() {
 		}
 		$.ajax({
 			type:"post",
-			url:"mailKeyChk.do",
+			url:"/member/mailKeyChk.do",
 			data:{
 					teEmailKey:userMailChk.val(),
 					teEmail:userEmail.val()
@@ -298,7 +298,7 @@ $(document).ready(function() {
 		}
 		$.ajax({
 				type:"post",
-				url:"emailAuthChk.do",
+				url:"/member/emailAuthChk.do",
 				data:{
 						teEmailKey:userMailChk.val(),
 						teEmail:userEmail.val()

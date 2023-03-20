@@ -20,7 +20,7 @@
 	<jsp:include page="/WEB-INF/views/member/header.jsp"/>
 	
 	<div class="unRegiWrap">
-	<form action="unRegiAf.do" method="post">
+	<form action="/member/unRegiAf.do" method="post">
 		<div class="unRegiBox" id="unRegiBox">
 			<h2>회원탈퇴</h2>
 			<input type="hidden" value="<%=login.getTeEmail()%>" name="teEmail">
@@ -64,7 +64,7 @@
 			
 			$.ajax({
 				type:"post",
-				url:"idPwChk.do",
+				url:"/member/idPwChk.do",
 				data:{
 					teId:userId.val(),
 					tePwd:userPwd.val()

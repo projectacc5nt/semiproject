@@ -1,6 +1,5 @@
 @charset "UTF-8";
 
-/* 추가할 class */
 .inputOk {
 	border : 1px solid #0F0FC0 !important;
 }
@@ -8,6 +7,22 @@
 	border : 1px solid #ff0000 !important;
 }
 
+.shake-element {
+  animation: shake 0.3s;
+}
+.clickBtn {
+    color:#fff !important;
+    font-weight: 700 !important;
+    background:#64BDEB !important;
+}
+
+.colorChange {
+    font-size:0.9em !important;
+    color:#020202 !important;
+}
+
+
+/* keyframes */
 @keyframes shake {
   0% {
     transform: translateX(0);
@@ -27,13 +42,4 @@
   100% {
     transform: translateX(0);
   }
-}
-
-.shake-element {
-  animation: shake 0.3s;
-}
-.clickBtn {
-    color:#fff !important;
-    font-weight: 700 !important;
-    background:#64BDEB !important;
 }

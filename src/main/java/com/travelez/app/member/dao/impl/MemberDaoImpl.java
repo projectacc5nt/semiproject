@@ -99,7 +99,6 @@ public class MemberDaoImpl implements MemberDao {
 
 	@Override
 	public int unEmailChk(String email) {
-		System.out.println("dao " + email);
 		return session.delete(ns + "unEmailChk", email);
 	}
 

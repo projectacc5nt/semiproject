@@ -19,7 +19,7 @@
 <div class="loginWrap">
         <h1><img src="../asset/images/logo.png" alt="여행이지"></h1>
         <div class="loginContent">
-            <form action="loginAf.do" method="post" id="loginForm">
+            <form action="/member/loginAf.do" method="post" id="loginForm">
                 <input type="text" name="teId" id="userId" placeholder="아이디">
                 <input type="password" name="tePwd" id="userPwd" placeholder="비밀번호">
                 <p id="idPwdChk"></p>
@@ -28,10 +28,10 @@
                         <input type="checkbox" name="SaveIdChk" id="SaveIdChk">
                         <label for="SaveIdChk">아이디 저장</label>
                     </div>
-                    <a href="findAccount.do" class="idPwdSearch">아이디 / 비밀번호 찾기</a>
+                    <a href="/member/findAccount.do" class="idPwdSearch">아이디 / 비밀번호 찾기</a>
                 </div>
                 <button type="button" id="loginBtn">로그인</button>
-                <a href="regi.do" class="regiBtn">회원가입</a>
+                <a href="/member/regi.do" class="regiBtn">회원가입</a>
             </form>
         </div>
     </div>
@@ -81,14 +81,14 @@
     		}
     		$.ajax({
     			type:"post",
-    			url:"loginAf.do",
+    			url:"/member/loginAf.do",
     			data:{
     				"teId":teId.val(),
     				"tePwd":tePwd.val()
     			},
     			success:function(msg){
     				if(msg == "LOGIN_OK"){
-    					location.href = "home.do";
+    					location.href = "../home.do";
     					
     				}else if(msg == "LOGIN_FAIL"){
     					idPwdChk.text("아이디 또는 비밀번호를 확인해주세요.")
