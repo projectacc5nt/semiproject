@@ -9,7 +9,7 @@
 %>
 <header>
     <div class="hTop">
-        <h1><a href="home.do"><img src="../asset/images/logo.png" alt="여행이지"></a></h1>
+        <h1><a href="../home.do"><img src="../asset/images/logo.png" alt="여행이지"></a></h1>
         <div class="hTopRightMenu">
             <c:if test="${sessionScope.login.teId == null }">
 	            <a href="/member/login.do">로그인</a>
