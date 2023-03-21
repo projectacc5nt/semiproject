@@ -40,13 +40,6 @@ public class MemberController {
 	@Autowired
 	JavaMailSender mailSender;
 	
-	@GetMapping(value = "home.do")
-	public String home(Model model, String teId) {
-		System.out.println("MemberController home" + new Date());
-		
-		return "member/home";
-	}
-	
 	@GetMapping(value = "regi.do")
 	public String regi() {
 		System.out.println("MemberController regi" + new Date());
@@ -244,7 +237,9 @@ public class MemberController {
 		session.setAttribute("login", dto);
 		System.out.println("로그아웃 되었습니다.");
 		
-		return "member/home";
+		
+		
+		return "home";
 	}
 	@GetMapping(value="findAccount.do")
 	public String findAccount() {
@@ -352,15 +347,14 @@ public class MemberController {
 		}
 
 	}
-	@GetMapping(value = "mypage.do")
-	public String mypage(Model model, String teId) {
-		
-		System.out.println("MemberController mypage" + new Date());
+	@GetMapping(value="myProfile.do")
+	public String myProfile(Model model, String teId) {
+		System.out.println("MemberController myProfile" + new Date());
 		
 		MemberDto userInfo = service.userInfo(teId);
 		model.addAttribute("userInfo", userInfo);
 		
-		return "member/mypage";
+		return "member/myProfile";
 	}
 	
 	@PostMapping(value="updateUserInfo.do")

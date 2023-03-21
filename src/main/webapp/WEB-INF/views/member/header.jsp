@@ -9,33 +9,33 @@
 %>
 <header>
     <div class="hTop">
-        <h1><a href="home.do"><img src="../asset/images/logo.png" alt="여행이지"></a></h1>
+        <h1><a href="../home.do"><img src="../asset/images/logo.png" alt="여행이지"></a></h1>
         <div class="hTopRightMenu">
             <c:if test="${sessionScope.login.teId == null }">
-	            <a href="login.do">로그인</a>
-	            <a href="regi.do">회원가입</a>
+	            <a href="/member/login.do">로그인</a>
+	            <a href="/member/regi.do">회원가입</a>
             </c:if>
             <c:if test="${sessionScope.login.teId != null }">
-				<a href ="mypage.do?teId=<%=login.getTeId() %>"><img src="<%= login.getTeProfile() %>"><span><%=login.getTeId() %></span>님</a>
-	            <a href="logout.do">로그아웃</a>
+				<a href ="/member/myPlanList.do?teId=<%=login.getTeId() %>"><img src="<%= login.getTeProfile() %>"><span><%=login.getTeId() %></span>님</a>
+	            <a href="/member/logout.do">로그아웃</a>
             </c:if>
         </div>
     </div>
     <div class="hBottomBg">
         <a href="#none" class="hBtmLogo"><img src="../asset/images/logoW.png" alt="여행이지"></a>
         <nav class="hBottom">
-            <a href="ta_detail.do">숙소</a>
-            <a href="play.do">놀거리</a>
-            <a href="plan.do">여행플랜</a>
+            <a href="/notice/bbslist">공지사항</a>
+            <a href="/play/play.do">놀거리</a>
+            <a href="/plan/plan.do">여행플랜</a>
         </nav>
         <div class="hBtmRightMenu">
             <c:if test="${sessionScope.login.teId == null }">
-	            <a href="login.do" class="login">로그인</a>
-	            <a href="regi.do" class="regi">회원가입</a>
+	            <a href="/member/login.do" class="login">로그인</a>
+	            <a href="/member/regi.do" class="regi">회원가입</a>
             </c:if>
             <c:if test="${sessionScope.login.teId != null }">
-				<a href ="mypage.do?teId=<%=login.getTeId() %>" class="mypage" id="mypage"><img src="<%= login.getTeProfile() %>"></a>
-	            <a href="logout.do" class="logout" id="logout">로그아웃</a>
+				<a href ="/member/myPlanList.do?teId=<%=login.getTeId() %>" class="mypage" id="mypage"><img src="<%= login.getTeProfile() %>"></a>
+	            <a href="/member/logout.do" class="logout" id="logout">로그아웃</a>
             </c:if>
         </div>
     </div>

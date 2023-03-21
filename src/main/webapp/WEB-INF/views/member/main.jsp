@@ -15,45 +15,45 @@
              </div>
         </div>
         <div class="category">
-            <a href="ta_bbslist.do?choice=title&search=호캉스" class="hotel">
+            <a href="/plan/plan.do?category=title&search=호캉스" class="hotel">
                 <img src="../asset/images/hotel.png" alt="hotel">
                 <span>호캉스</span>
             </a>
-            <a href="ta_bbslist.do?choice=title&search=펜션" class="hotel">
+            <a href="/plan/plan.do?category=title&search=펜션" class="hotel">
                 <img src="../asset/images/pension.png" alt="pension">
                 <span>펜션</span>
             </a>
-            <a href="ta_bbslist.do?choice=title&search=캠핑" class="hotel">
+            <a href="/plan/plan.do?category=title&search=캠핑" class="hotel">
                 <img src="../asset/images/camping.png" alt="camping">
                 <span>캠핑</span>
             </a>
-            <a href="play.do?choice=title&search=전시" class="hotel">
+            <a href="/play/play.do?choice=title&search=전시" class="hotel">
                 <img src="../asset/images/museum.png" alt="museum">
                 <span>전시</span>
             </a>
-            <a href="play.do?choice=title&search=핫플" class="hotel">
+            <a href="/play/play.do?choice=title&search=핫플" class="hotel">
                 <img src="../asset/images/place.png" alt="place">
                 <span>핫플</span>
             </a>
         </div>
         <div class="categoryContent campingBox">
-            <p class="cTitle">캠핑</p>
+            <p class="cTitle">인기여행코스</p>
             <div class="cContent">
-                <a href="ta_detail.do?seq=1" class="cBox" target="_blank">
-                    <div><img src="../asset/images/cam1.jpg" alt="까사32"></div>
-                    <p>가평 까사32 사계절 리버뷰 온수풀 수영장 펜션 리조트 객실</p>
+                <a href="/plan/planDetail.do?seq=1" class="cBox" target="_blank">
+                    <div><img src="../asset/images/1_thumbnail.jpg" alt="단풍이 들어있는 산에 케이블카"></div>
+                    <p>왕초보를 위한 서울 3박 4일 코스</p>
                 </a>
-                <a href="ta_detail.do?seq=2" class="cBox" target="_blank">
-                    <div><img src="../asset/images/cam2.jpg" alt="까망베르애견풀빌라"></div>
-                    <p>가평펜션 까망베르애견풀빌라 강아지와 함께 갈 수 있는 펜션</p>
+                <a href="/plan/planDetail.do?seq=2" class="cBox" target="_blank">
+                    <div><img src="../asset/images/2_thumbnail.jpg" alt="바다풍경사진"></div>
+                    <p>2시간이면 갈 수 있는 춘천 여행 코스</p>
                 </a>
-                <a href="ta_detail.do?seq=3" class="cBox" target="_blank">
-                    <div><img src="../asset/images/cam3.jpg" alt="청춘글램핑&카라반"></div>
-                    <p>서울 근교 글램핑장 경기도 가평 청춘글램핑&카라반</p>
+                <a href="/plan/planDetail.do?seq=6" class="cBox" target="_blank">
+                    <div><img src="../asset/images/6_thumbnail.jpg" alt="바닥에 꽃이 떨어져있는 사진"></div>
+                    <p>통영 1박2일 여행코스</p>
                 </a>
-                <a href="ta_detail.do?seq=4" class="cBox" target="_blank">
-                    <div><img src="../asset/images/cam4.jpg" alt="세인트21"></div>
-                    <p>가평 독채 풀빌라 펜션 세인트21에서 가족 힐링여행 딱 좋아</p>
+                <a href="/plan/planDetail.do?seq=7" class="cBox" target="_blank">
+                    <div><img src="../asset/images/7_thumbnail.jpg" alt="왼쪽에는 물이 흐르고 오른쪽에는 나무가 자라있는 길사진"></div>
+                    <p>전북 고창 여행코스</p>
                 </a>
             </div>
         </div>
@@ -102,21 +102,21 @@
         <div class="categoryContent campingBox">
             <p class="cTitle">여행꿀팁</p>
             <div class="cContent">
-                <a href="#none" class="cBox" target="_blank">
-                    <div><img src="../asset/images/testImg.jpg" alt=""></div>
-                    <p>탁 트인 해변부터 낭만적인 야경코스까지 당일치기 드라이브6</p>
+                <a href="/plan/planDetail.do?seq=3" class="cBox" target="_blank">
+                    <div><img src="../asset/images/3_thumbnail.jpg" alt=""></div>
+                    <p>안 가면 후회할 숨은 벚꽃 명소</p>
+                </a>
+                <a href="/plan/planDetail.do?seq=1" class="cBox" target="_blank">
+                    <div><img src="../asset/images/1_thumbnail.jpg" alt="까사32"></div>
+                    <p>왕초보를 위한 서울 3박 4일 코스</p>
+                </a>
+                <a href="/plan/planDetail.do?seq=5" class="cBox" target="_blank">
+                    <div><img src="../asset/images/5_thumbnail.jpg" alt="세인트21"></div>
+                    <p>보령 여행, 가족 봄나들이 여행 코스</p>
                 </a>
                 <a href="#none" class="cBox" target="_blank">
                     <div><img src="../asset/images/testImg.jpg" alt=""></div>
-                    <p>탁 트인 해변부터 낭만적인 야경코스까지 당일치기 드라이브6</p>
-                </a>
-                <a href="#none" class="cBox" target="_blank">
-                    <div><img src="../asset/images/testImg.jpg" alt=""></div>
-                    <p>탁 트인 해변부터 낭만적인 야경코스까지 당일치기 드라이브6</p>
-                </a>
-                <a href="#none" class="cBox" target="_blank">
-                    <div><img src="../asset/images/testImg.jpg" alt=""></div>
-                    <p>탁 트인 해변부터 낭만적인 야경코스까지 당일치기 드라이브6</p>
+                    <p>당일치기 드라이브6</p>
                 </a>
             </div>
         </div>
